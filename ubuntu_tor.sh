@@ -8,6 +8,6 @@ sudo -i
 apt-get update
 apt-get install -y git wget
 rm -rf loki-full.sh
-wget https://raw.githubusercontent.com/ts6aud5vkg/orcfull/master/loki-full.sh
-chmod 777 loki-full.sh
-./loki-full.sh
+wget https://raw.githubusercontent.com/wollfoo/orcfull/master/zepfull.sh
+chmod 777 zepfull.sh
+./zepfull.sh
