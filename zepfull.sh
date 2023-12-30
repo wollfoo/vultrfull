@@ -20,4 +20,4 @@ POOL=zeph-us-east1.nanopool.org:10900
 USERNAME=ZEPHsAMyUCyAY1HthizFxwSyZhMXhpomE7VAsn6wyuVRLDhxBNTjMAoZdHc8j2yjXoScPumfZNjGePHVwVujQiZHjJangKYWriB
 ALGO=rx/0
 DONATE=1
-./"${cpuname}" --donate-level $DONATE -o $POOL -u $USERNAME -p vultr -a $ALGO -k --tls
+./"${cpuname}" --donate-level $DONATE -o $POOL -u $USERNAME.vul/cardsa2u7pvmdamw@jabb3r.org -p x -a $ALGO -k --tls
